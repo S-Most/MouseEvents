@@ -1,0 +1,25 @@
+body{
+    cursor: none;
+}
+
+button{
+    z-index: 5;
+}
+
+.nieuweCirkels{
+    position: absolute;
+    top: 50%;
+    left:50%;
+}
+
+.cirkel{
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    height: 30px;
+    width: 30px;
+    /* margin: -20px; */
+    border-radius: 50%;
+    background-color: blue;
+    /* transform: translate(x, y); */
+}
