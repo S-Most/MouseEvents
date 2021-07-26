@@ -1,25 +1,64 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     cursor: none;
 }
 
-button{
-    z-index: 5;
+.apple{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform-origin: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: black;
 }
 
-.nieuweCirkels{
+.dot{
     position: absolute;
-    top: 50%;
-    left:50%;
-}
-
-.cirkel{
-    position: absolute;
-    /* left: 50%;
-    top: 50%; */
-    height: 30px;
-    width: 30px;
-    /* margin: -20px; */
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     background-color: blue;
-    /* transform: translate(x, y); */
+    margin: -12px;
+    transition: all calc(attr(data-cursor));
+    transition-timing-function: linear;
 }
+
+
+
+.dot:nth-child(1){
+    transition: all 0.1s;
+    background-color: green;
+}
+/* .dot:nth-child(2){
+    transition: all 0.13s;
+    background-color: yellow;
+}
+.dot:nth-child(3){
+    transition: all 0.16s;
+    background-color: orange;
+}
+.dot:nth-child(4){
+    transition: all 0.2s;
+    background-color: red;
+}
+.dot:nth-child(5){
+    transition: all 0.23s;
+    background-color: blue;
+}
+.dot:nth-child(6){
+    transition: all 0.26s;
+    background-color: purple;
+}
+.dot:nth-child(7){
+    transition: all 0.3s;
+    background-color: rgb(199, 197, 102);
+}
+.dot:nth-child(8){
+    transition: all 0.33s;
+    background-color: rgb(124, 122, 128);
+} */
